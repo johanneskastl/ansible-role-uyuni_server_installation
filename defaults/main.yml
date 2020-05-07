@@ -1,0 +1,5 @@
+---
+# uyuni_server_installation/defaults/main.yml
+
+uyuni_package: 'patterns-uyuni_server'
+uyuni_repo: 'https://download.opensuse.org/repositories/systemsmanagement:/Uyuni:/Stable/images/repo/Uyuni-Server-POOL-x86_64-Media1/'
