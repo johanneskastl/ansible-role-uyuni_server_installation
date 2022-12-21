@@ -3,7 +3,7 @@
 uyuni_server_installation
 =========
 
-Install a uyuni server (on openSUSE Leap 15.1)
+Install a uyuni server (on openSUSE Leap 15)
 
 Requirements
 ------------
