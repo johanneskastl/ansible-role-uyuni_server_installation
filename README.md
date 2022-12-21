@@ -25,7 +25,7 @@ Example Playbook
 
     - hosts: servers
       roles:
-         - { role: 'johanneskastl.uyuni_server_installation' }
+         - role: 'johanneskastl.uyuni_server_installation'
 
 License
 -------
