@@ -2,7 +2,7 @@ galaxy_info:
   role_name: 'uyuni_server_installation'
   namespace: 'johanneskastl'
   author: 'Johannes Kastl'
-  description: 'Install a uyuni server (on openSUSE Leap 15.1)'
+  description: 'Install a uyuni server (on openSUSE Leap 15)'
   company: 'B1 Systems GmbH'
 
   license: 'BSD-3-Clause'
