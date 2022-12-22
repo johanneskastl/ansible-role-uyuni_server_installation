@@ -2,7 +2,7 @@
 # uyuni_server_installation/tasks/main.yml
 
 - name: 'Add Uyuni repository'
-  ansible.builtin.zypper_repository:
+  community.general.zypper_repository:
     repo: "{{ uyuni_repo }}"
     name: 'uyuni-server-stable'
     state: 'present'
@@ -11,7 +11,7 @@
   when: 'ansible_distribution == "openSUSE Leap" and ansible_distribution_major_version|int == 15'
 
 - name: 'Install package patterns-uyuni_server'
-  ansible.builtin.zypper:
+  community.general.zypper:
     name: "{{ uyuni_package }}"
     state: 'present'
   when: 'ansible_distribution == "openSUSE Leap" and ansible_distribution_major_version|int == 15'
