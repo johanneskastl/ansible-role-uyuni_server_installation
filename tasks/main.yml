@@ -8,10 +8,14 @@
     state: 'present'
     auto_import_keys: 'yes'
     runrefresh: 'yes'
-  when: 'ansible_distribution == "openSUSE Leap" and ansible_distribution_major_version|int == 15'
+  when:
+    - 'ansible_distribution == "openSUSE Leap"'
+    - 'ansible_distribution_major_version|int == 15'
 
 - name: 'Install package patterns-uyuni_server'
   community.general.zypper:
     name: "{{ uyuni_package }}"
     state: 'present'
-  when: 'ansible_distribution == "openSUSE Leap" and ansible_distribution_major_version|int == 15'
+  when:
+    - 'ansible_distribution == "openSUSE Leap"'
+    - 'ansible_distribution_major_version|int == 15'
